@@ -112,6 +112,8 @@ img {
     width: 25%; }
   .col-5 {
     width: 20%; }
+  .col-6 {
+    width: 16.66667%; }
 
 /* Form elements */
 .input {
@@ -283,10 +285,11 @@ img {
     top: 6px; }
   .input input {
     display: block;
-    background: transparent;
+    background-color: #5f3f2a;
     padding: 9.5px 15px 9.5px 39px;
     color: white;
-    font-family: "AGOpus", sans-serif; }
+    font-family: "AGOpus", sans-serif;
+    width: 100%; }
     .input input:placeholder {
       color: #979796; }
   .input_email img {
@@ -507,9 +510,145 @@ img {
 
 .how {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   background: url("../../img/triangles.png") repeat-x center top, url("../../img/triangles.png") repeat-x center bottom;
   margin-top: -9px;
-  padding-top: 27px; }
+  padding-top: 27px;
+  padding-bottom: 30px; }
   .how__title {
     margin-bottom: 26px; }
+  .how__list {
+    margin-left: 29px;
+    margin-right: 29px; }
+  .how__item {
+    position: relative; }
+    .how__item:before {
+      z-index: 3;
+      position: absolute;
+      display: block;
+      content: '';
+      width: 151px;
+      height: 150px;
+      left: 50%;
+      margin-left: -78px;
+      background: url("../../img/item.png"); }
+    .how__item:after {
+      z-index: 2;
+      position: absolute;
+      display: block;
+      content: '';
+      width: 46px;
+      height: 144px;
+      background: url("../../img/4gon.png");
+      right: -17px;
+      top: 2px; }
+    .how__item:last-of-type:after {
+      display: none; }
+  .how__wrap {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    height: 150px; }
+  .how__num {
+    height: 62px;
+    padding-top: 13px;
+    font-size: 48px;
+    color: white;
+    padding-left: 10px; }
+  .how__icon {
+    line-height: 88px;
+    text-align: center;
+    padding-right: 10px; }
+    .how__icon img {
+      display: inline-block;
+      vertical-align: middle; }
+  .how__text {
+    font-size: 21px;
+    padding-right: 25px;
+    padding-top: 17px; }
+  .how__block {
+    margin-top: 30px;
+    width: 585px;
+    margin-left: auto;
+    margin-right: auto; }
+  .how__subtitle {
+    font-size: 40px;
+    text-align: center; }
+  .how__content {
+    font-size: 21px; }
+
+.form-block {
+  position: relative;
+  z-index: 2;
+  color: white;
+  margin-top: -9px;
+  height: 340px;
+  background: url("../../img/board.png") no-repeat center top; }
+  .form-block__image {
+    padding-top: 25px;
+    margin-left: 37px; }
+  .form-block__title {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 58px;
+    margin-bottom: 42px; }
+  .form-block__form {
+    width: 620px;
+    margin-right: 30px; }
+    .form-block__form .row {
+      margin-bottom: 25px; }
+    .form-block__form .form {
+      background: none;
+      border: none;
+      width: 100%; }
+    .form-block__form .input {
+      margin-bottom: 0; }
+    .form-block__form .col {
+      padding-left: 24px;
+      padding-right: 24px; }
+    .form-block__form .button {
+      margin-top: 0;
+      width: 100%;
+      font-size: 21px;
+      border: 1px solid #ffffff;
+      padding-top: 9px;
+      padding-bottom: 7px; }
+
+.footer {
+  padding-top: 39px;
+  margin-top: -9px;
+  z-index: 1;
+  position: relative;
+  background: url("../../img/footer.png") no-repeat center bottom; }
+  .footer__nav, .footer__phone {
+    vertical-align: middle; }
+  .footer__nav li {
+    margin-left: 14px;
+    margin-right: 14px; }
+  .footer__nav a {
+    text-shadow: -0 -1px 0 #fff, 0 -1px 0 #fff, -0  1px 0 #fff, 0  1px 0 #fff, -1px -0 0 #fff, 1px -0 0 #fff, -1px  0 0 #fff, 1px  0 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff; }
+  .footer__phone {
+    margin-left: -30px; }
+    .footer__phone img {
+      margin-right: -40px;
+      margin-top: -45px;
+      margin-bottom: -45px; }
+    .footer__phone a {
+      text-shadow: -0 -1px 0 #fff, 0 -1px 0 #fff, -0  1px 0 #fff, 0  1px 0 #fff, -1px -0 0 #fff, 1px -0 0 #fff, -1px  0 0 #fff, 1px  0 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff; }
+  .footer__middle {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .footer__bottom {
+    font-size: 18px;
+    text-align: center; }
+  .footer__counters {
+    text-align: center;
+    width: 190px; }
+    .footer__counters img {
+      margin-left: auto;
+      margin-right: auto; }
+  .footer__viber {
+    margin-bottom: 13px; }
+
+.color-red {
+  color: #fe0000; }

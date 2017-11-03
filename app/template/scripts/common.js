@@ -7,7 +7,7 @@ $(document).ready(function($) {
 		var id  = $(this).attr('href');
 		if(id.charAt(0) == '#'){
 			event.preventDefault();
-			var top = $(id).offset().top;
+			var top = $(id).offset().top - 50;
 			$('body,html').animate({scrollTop: top}, 1000);
 		}
 	});
