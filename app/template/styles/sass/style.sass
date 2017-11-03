@@ -8,8 +8,14 @@
 	font-family: 'Bebas'
 
 @font-face
-	src: url('../../fonts/MyriadProCond.ttf')
-	font-family: 'MyriadProCond'
+	src: url('../../fonts/MyriadProNormalCond.otf')
+	font-family: 'Myriad Pro'
+	font-weight: 400
+
+@font-face
+	src: url('../../fonts/MyriadProBoldCond.ttf')
+	font-family: 'Myriad Pro'
+	font-weight: 700
 
 @font-face
 	src: url('../../fonts/AGOpus.ttf')
@@ -24,7 +30,7 @@
 /* Global settings */
 $font-size: 25px
 $font-family-1: 'Bebas', sans-serif
-$font-family-2: 'MyriadProCond', sans-serif
+$font-family-2: 'Myriad Pro', sans-serif
 $font-family-3: 'AGOpus', sans-serif
 $font-family-4: 'ArialMT', sans-serif
 $color-1: #000
@@ -176,3 +182,365 @@ img
 .center, .container
 	margin-left: auto
 	margin-right: auto
+
+
+.triangles-after
+	position: relative
+	&:after
+		z-index: 5
+		position: absolute
+		content: ''
+		width: 100%
+		height: 31px
+		bottom: -16px
+		background: url('../../img/triangles.png') center
+
+
+
+.panel
+	z-index: 100
+	padding-top: 13px
+	padding-bottom: 4px
+	font-size: 25px
+	position: fixed
+	width: 100%
+	left: 0
+	top: 0
+	background: white
+	&__nav
+		margin-right: 16px
+		padding-top: 7px
+		li
+			margin-left: 14px
+			margin-right: 14px
+	&__phone
+		
+	&__nav, &__phone
+		position: relative
+		z-index: 6
+
+.phone
+	img
+		position: relative
+		top: -2px
+		margin-right: 4px
+	img, a
+		display: inline-block
+		vertical-align: middle
+
+
+
+.header
+	position: relative
+	z-index: 3
+	color: white
+	padding-top: 85px
+	padding-bottom: 52px
+	margin-top: 59px
+	background: url('../../img/header.png') no-repeat center top
+	&__logo
+		z-index: 1
+		position: absolute
+		top: -65px
+		left: 26px
+	&__title
+		padding-top: 100px
+		margin-left: 13px
+		p
+			background: rgba(255,255,255,.25)
+			padding: 19px 15px 12px
+			&:nth-of-type(1)
+				width: 600px
+				font-size: 56px
+				margin-bottom: 30px
+				text-shadow: -0 -2px 0 #000000, 0 -2px 0 #000000, -0  2px 0 #000000, 0  2px 0 #000000, -2px -0 0 #000000, 2px -0 0 #000000, -2px  0 0 #000000, 2px  0 0 #000000, -1px -2px 0 #000000, 1px -2px 0 #000000, -1px  2px 0 #000000, 1px  2px 0 #000000, -2px -1px 0 #000000, 2px -1px 0 #000000, -2px  1px 0 #000000, 2px  1px 0 #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px  2px 0 #000000, 2px  2px 0 #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px  2px 0 #000000, 2px  2px 0 #000000, 10px 10px 7px rgba(0, 0, 0, 0.75)
+			&:nth-of-type(2)
+				width: 500px
+				font-size: 39px
+				margin-bottom: 25px
+				text-shadow: -0 -2px 0 #000000, 0 -2px 0 #000000, -0  2px 0 #000000, 0  2px 0 #000000, -2px -0 0 #000000, 2px -0 0 #000000, -2px  0 0 #000000, 2px  0 0 #000000, -1px -2px 0 #000000, 1px -2px 0 #000000, -1px  2px 0 #000000, 1px  2px 0 #000000, -2px -1px 0 #000000, 2px -1px 0 #000000, -2px  1px 0 #000000, 2px  1px 0 #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px  2px 0 #000000, 2px  2px 0 #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px  2px 0 #000000, 2px  2px 0 #000000, 10px 10px 7px rgba(0, 0, 0, 0.75)
+			&:nth-of-type(3)
+				width: 600px
+				font-size: 49px
+				text-shadow: -0 -2px 0 #000000, 0 -2px 0 #000000, -0  2px 0 #000000, 0  2px 0 #000000, -2px -0 0 #000000, 2px -0 0 #000000, -2px  0 0 #000000, 2px  0 0 #000000, -1px -2px 0 #000000, 1px -2px 0 #000000, -1px  2px 0 #000000, 1px  2px 0 #000000, -2px -1px 0 #000000, 2px -1px 0 #000000, -2px  1px 0 #000000, 2px  1px 0 #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px  2px 0 #000000, 2px  2px 0 #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px  2px 0 #000000, 2px  2px 0 #000000, 10px 10px 7px rgba(0, 0, 0, 0.75)
+	&__form
+		float: right
+		padding: 20px 35px 25px
+
+
+.form
+	width: 334px
+	border: 1px solid #ffffff
+	background-color: #5f3f2a
+	text-align: center
+	margin-right: 11px
+	&__title
+		font-size: 26px
+		font-family: $font-family-2
+		margin-bottom: 5px
+	&__desc
+		font-size: 20px
+		font-family: $font-family-2
+		margin-bottom: 17px
+	&__input
+		margin-bottom: 20px
+	&__button
+		margin-top: 40px
+		width: 180px
+
+.input
+	border: 3px solid #b66d3b
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75)
+	background: transparent
+	position: relative
+	border-radius: 2px
+	img
+		position: absolute
+		left: 8px
+		top: 6px
+	input
+		display: block
+		background: transparent
+		padding: 9.5px 15px 9.5px 39px
+		color: white
+		font-family: $font-family-3
+		&:placeholder
+			color: #979796
+	&_email
+		img
+			top: 11px
+
+.button
+	display: block
+	font-family: $font-family-2
+	color: white
+	text-transform: uppercase
+	background-color: #311f15
+	font-weight: 700
+	padding-top: 14px
+	padding-bottom: 10px
+	&:hover
+		background-color: darken(#311f15, 10%)
+
+
+.title
+	text-align: center
+	font-size: 44px
+	text-shadow: -0 -1px 0 #fff, 0 -1px 0 #fff, -0  1px 0 #fff, 0  1px 0 #fff, -1px -0 0 #fff, 1px -0 0 #fff, -1px  0 0 #fff, 1px  0 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff
+
+
+
+
+
+.catalog
+	position: relative
+	z-index: 2
+	margin-top: -8px
+	background: url('../../img/pattern.png') center
+	padding-top: 45px
+	padding-bottom: 40px
+	&__title
+		margin-bottom: 20px
+	&__item
+		color: white
+		width: 293px
+		border: 1px solid #ffffff
+		background-color: #5f3f2a
+		margin-left: 17px
+		margin-right: 17px
+		padding: 34px 0 24px
+	&__subtitle
+		max-width: 210px
+		margin-left: auto
+		margin-right: auto
+		font-size: 32px
+		margin-bottom: 20px
+	&__image
+		margin-bottom: 17px
+		position: relative
+		&:before
+			content: ''
+			top: 25px
+			left: 35px
+			position: absolute
+			width: 224px
+			height: 229px
+			background-color: #bdbdbd
+		img
+			z-index: 2
+			position: relative
+			margin-left: auto
+			margin-right: auto
+	&__price
+		font-size: 32px
+		margin-bottom: 25px
+	&__button
+		width: 180px
+		font-size: 21px
+		padding-top: 11px
+		padding-bottom: 7px
+	&__desc
+		margin-top: 69px
+		margin-bottom: 10px
+	&__link
+		width: 910px
+		background: rgba(255,255,255,.5)
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+
+.link
+	padding-top: 4px
+	padding-bottom: 4px
+	&__text, &__button
+		display: inline-block
+		vertical-align: middle
+	&__text
+		position: relative
+		font-size: 39px
+		color: #1c1c1c
+		position: relative
+		top: 4px
+	&__button
+		width: 180px
+		margin-left: 10px
+		font-size: 21px
+
+.about
+	z-index: 5
+	position: relative
+	margin-top: -11px
+	padding-top: 32px
+	padding-bottom: 55px
+	background: url('../../img/about.png') no-repeat center top
+	&__title
+		margin-bottom: 40px
+		color: white
+		text-shadow: 4px 4px 13px rgba(0, 0, 0, 0.75)
+	&__image
+		margin-left: -75px
+		margin-right: -50px
+		width: 612px
+		img
+			z-index: 1
+			position: relative
+	&__text
+		margin-top: 5px
+		font-size: 25px
+		font-family: $font-family-2
+		background: rgba(255,255,255,.6)
+		width: 475px
+		padding: 10px 16px 20px 22px
+		text-align: justify
+		margin-right: 30px
+		p
+			z-index: 2
+			position: relative
+			margin-bottom: 25px
+			&:last-of-type
+				margin-bottom: 0
+
+.advantages
+	&__head
+		margin-top: -10px
+		padding-top: 40px
+		padding-bottom: 29px
+		background: url('../../img/pattern.png') center
+	&__body
+		position: relative
+		z-index: 5
+		height: 836px
+		margin-top: -9px
+		background: url('../../img/tree.png') no-repeat center top
+	&__list
+		position: relative
+	&__item
+		position: absolute 
+		&:nth-of-type(1)
+			top: 24px
+			right: (90px - 15px)
+			width: 612px
+			.advantages
+				&__content
+					padding-right: 120px
+				&__icon
+					right: -38px
+					top: 2px
+		&:nth-of-type(2)
+			top: 255px
+			left: (15px - 15px)
+			width: 300px
+			.advantages
+				&__content
+				
+				&__icon
+					right: 50%
+					margin-right: -75px
+					top: -140px
+		&:nth-of-type(3)
+			top: 350px
+			right: (30px - 15px)
+			width: 400px
+			.advantages
+				&__content
+					
+				&__icon
+					right: -24px
+					top: -115px
+		&:nth-of-type(4)
+			top: 597px
+			left: (15px - 15px)
+			width: 340px
+			.advantages
+				&__content
+					
+				&__icon
+					right: 20px
+					top: -115px
+		&:nth-of-type(5)
+			top: 645px
+			right: (25px - 15px)
+			width: 625px
+			.advantages
+				&__content
+					
+				&__icon
+					right: 90px
+					top: -115px
+	&__icon
+		position: absolute
+		width: 150px
+		height: 150px
+		line-height: 142px
+		border: 4px solid #000000
+		background-color: #ffffff
+		text-align: center
+		border-radius: 50%
+		img
+			display: inline-block
+			vertical-align: middle
+	&__content
+		padding: 12px 15px 12px 
+		background: rgba(255,255,255,.65)
+
+	&__text
+		font-size: 19px
+
+	&__subtitle
+		font-size: 28px
+		margin-bottom: 7px
+
+	&__footer
+		margin-top: -9px
+		z-index: 3
+		height: 60px
+		background: url('../../img/pattern.png') center
+
+.how
+	position: relative
+	z-index: 2
+	background: url('../../img/triangles.png') repeat-x center top, url('../../img/triangles.png') repeat-x center bottom
+	margin-top: -9px
+	padding-top: 27px
+	&__title
+		margin-bottom: 26px
