@@ -215,6 +215,21 @@ img
 		li
 			margin-left: 14px
 			margin-right: 14px
+		a
+			position: relative
+			&:hover
+				color: #fe0000
+				&:before
+					width: 100%
+			&:before
+				bottom: -3px
+				left: 0
+				width: 0
+				height: 2px
+				position: absolute
+				content: ''
+				transition: .3s
+				background: #fe0000
 	&__phone
 		
 	&__nav, &__phone
@@ -664,6 +679,20 @@ img
 			margin-right: 14px
 		a
 			text-shadow: -0 -1px 0 #fff, 0 -1px 0 #fff, -0  1px 0 #fff, 0  1px 0 #fff, -1px -0 0 #fff, 1px -0 0 #fff, -1px  0 0 #fff, 1px  0 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff
+			position: relative
+			&:hover
+				color: #fe0000
+				&:before
+					width: 100%
+			&:before
+				bottom: -3px
+				left: 0
+				width: 0
+				height: 2px
+				position: absolute
+				content: ''
+				transition: .3s
+				background: #fe0000
 
 	&__phone
 		margin-left: -30px
@@ -693,3 +722,16 @@ img
 
 .color-red
 	color: #fe0000
+
+.popup
+	display: none
+	width: 320px
+	padding: 0 !important
+	.form
+		color: white
+		width: 100%
+		padding: 20px 10px
+		&__title
+			margin-bottom: 15px
+		&__button
+			margin-top: 0

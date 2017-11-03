@@ -1,3 +1,251 @@
-// @media screen and (max-width: 1199px)
-// 	.container
-// 		width: 950px
+@media screen and (max-width: 1050px)
+	.container
+		width: 750px
+
+	.panel
+		padding-top: 7px
+		padding-bottom: 6px
+		z-index: 100
+		text-align: left
+		&:after
+			display: none
+		&__nav
+			padding-top: 0
+			margin-right: 0
+			display: none
+			position: fixed
+			top: 46px
+			left: 0
+			width: 100%
+			background: white
+			padding-top: 10px
+			padding-bottom: 5px
+			li
+				display: block
+				margin-bottom: 7px
+		&__phone
+			display: block
+			text-align: left
+			width: 190px
+		&__hum
+			position: absolute
+			right: 15px
+			top: 4px
+			display: block
+			z-index: 2
+			cursor: pointer
+			span
+				position: relative
+				display: block
+				width: 35px
+				height: 4px
+				background: #000
+				margin-bottom: 5px
+				transition: .3s
+			&_click
+				span
+					&:nth-of-type(1)
+						top: 10px
+						transform: rotate(45deg)
+					&:nth-of-type(2)
+						opacity: 0
+					&:nth-of-type(3)
+						top: -8px
+						transform: rotate(-45deg)
+
+	.header
+		z-index: 1
+		margin-top: 48px
+		padding-top: 20px
+		background-size: cover
+		&__logo
+			position: relative
+			top: 0
+			left: 0
+			img
+				margin-left: auto
+				margin-right: auto
+		&__title
+			padding-top: 20px
+			margin-left: 0
+			margin-left: auto
+			margin-right: auto
+			text-align: center
+			p
+				width: 100% !important
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 10px !important
+				background: none
+				padding: 0
+				font-size: 50px !important
+		&__title, &__form
+			float: none
+		&__form
+			margin-left: auto
+			margin-right: auto
+
+	.catalog
+		margin-top: -15px
+		&__item
+			margin-bottom: 20px
+			margin-left: 10px
+			margin-right: 10px
+		&__desc
+			display: none
+		&__link
+			width: 100%
+			padding-top: 10px
+			padding-bottom: 10px
+	.link
+		&__button
+			margin-top: 10px
+
+	.about
+		z-index: 1
+		margin-top: -20px
+		padding-top: 50px
+		padding-bottom: 30px
+		background-size: cover
+		&__title
+			margin-bottom: 20px
+		&__text, &__image
+			float: none
+			width: 100%
+		&__text
+			margin-bottom: 10px
+			p
+				margin-bottom: 15px
+				&:last-of-type
+					margin-bottom: 0
+		&__image
+			margin-left: 0
+			margin-right: 0
+			img
+				margin-left: auto
+				margin-right: auto
+
+	.advantages
+		&__head
+			position: relative
+			z-index: 6
+			margin-top: -20px
+		&__body
+			margin-top: -20px
+			background-size: cover
+			padding-top: 40px
+			padding-bottom: 30px
+			height: auto
+		&__footer
+			display: none
+		&__item
+			position: relative
+			top: 0 !important
+			left: 0 !important
+			right: 0 !important
+			width: 100% !important
+			background: rgba(255, 255, 255, 0.65)
+			margin-bottom: 20px
+			padding-top: 15px
+		&__icon
+			position: relative
+			margin-left: auto !important
+			margin-right: auto !important
+			left: 0 !important
+			right: 0 !important
+			bottom: 0 !important
+			top: 0 !important
+		&__content
+			text-align: center
+			padding: 12px 15px !important
+			background: none
+
+	.how
+		z-index: 6
+		background: white
+		margin-top: -20px
+		&__item
+			width: 220px
+			margin-bottom: 20px
+			&:before
+				// margin-left: -70px
+			&:after
+				display: none
+
+	.form-block
+		&__image
+			display: none
+		&__form
+			width: 100%
+			margin-right: 0
+
+	.footer
+		z-index: 3
+		&__nav
+			display: block
+			margin-bottom: 20px
+			li
+				font-size: 21px
+				margin-left: 10px
+				margin-right: 10px
+		&__phone
+			margin-left: 0
+		&__middle
+			display: none
+		&__bottom
+			margin-top: 25px
+
+@media screen and (max-width: 767px)
+	img
+		max-width: 100%
+	.container
+		width: 100%
+
+	.header
+		&__title
+			margin-bottom: 15px
+			p
+				font-size: 36px !important
+				display: inline
+		&__form
+			width: 100%
+			max-width: 334px
+
+	.how
+		&__subtitle
+			margin-bottom: 15px
+		&__block
+			width: 100%
+			text-align: justify
+	.form-block
+		height: auto
+		padding-bottom: 25px
+		background-size: cover
+		&__form
+			.row
+				margin-bottom: 0
+			.col
+				width: 100%
+		.form
+			&__input
+				margin-bottom: 10px
+			&__input, &__button
+				display: block
+				max-width: 400px
+				width: 100%
+				margin-left: auto
+				margin-right: auto
+	.footer
+		padding-top: 1px
+		padding-bottom: 20px
+		background: url('../../img/pattern.png')
+		text-shadow: -0 -1px 0 #fff, 0 -1px 0 #fff, -0  1px 0 #fff, 0  1px 0 #fff, -1px -0 0 #fff, 1px -0 0 #fff, -1px  0 0 #fff, 1px  0 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff
+		&__nav, &__phone
+			display: none
+				
+@media screen and (max-width: 370px)
+	.catalog
+		&__item
+			margin-left: 0
+			margin-right: 0
+			width: 280px

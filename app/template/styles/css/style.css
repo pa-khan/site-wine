@@ -1,4 +1,5 @@
 /* Including styles files */
+@import url(../../libs/fancybox/dist/jquery.fancybox.css);
 /* Including fonts */
 @font-face {
   src: url("../../fonts/BebasNeueBold.ttf");
@@ -201,6 +202,22 @@ img {
     .panel__nav li {
       margin-left: 14px;
       margin-right: 14px; }
+    .panel__nav a {
+      position: relative; }
+      .panel__nav a:hover {
+        color: #fe0000; }
+        .panel__nav a:hover:before {
+          width: 100%; }
+      .panel__nav a:before {
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        content: '';
+        -webkit-transition: .3s;
+        transition: .3s;
+        background: #fe0000; }
   .panel__nav, .panel__phone {
     position: relative;
     z-index: 6; }
@@ -626,7 +643,22 @@ img {
     margin-left: 14px;
     margin-right: 14px; }
   .footer__nav a {
-    text-shadow: -0 -1px 0 #fff, 0 -1px 0 #fff, -0  1px 0 #fff, 0  1px 0 #fff, -1px -0 0 #fff, 1px -0 0 #fff, -1px  0 0 #fff, 1px  0 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff; }
+    text-shadow: -0 -1px 0 #fff, 0 -1px 0 #fff, -0  1px 0 #fff, 0  1px 0 #fff, -1px -0 0 #fff, 1px -0 0 #fff, -1px  0 0 #fff, 1px  0 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff;
+    position: relative; }
+    .footer__nav a:hover {
+      color: #fe0000; }
+      .footer__nav a:hover:before {
+        width: 100%; }
+    .footer__nav a:before {
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      position: absolute;
+      content: '';
+      -webkit-transition: .3s;
+      transition: .3s;
+      background: #fe0000; }
   .footer__phone {
     margin-left: -30px; }
     .footer__phone img {
@@ -652,3 +684,16 @@ img {
 
 .color-red {
   color: #fe0000; }
+
+.popup {
+  display: none;
+  width: 320px;
+  padding: 0 !important; }
+  .popup .form {
+    color: white;
+    width: 100%;
+    padding: 20px 10px; }
+    .popup .form__title {
+      margin-bottom: 15px; }
+    .popup .form__button {
+      margin-top: 0; }

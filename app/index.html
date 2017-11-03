@@ -32,10 +32,9 @@
 </head>
 <body>
 
-<div class="popup">
+<div class="popup" id="popup-order">
 	<div class="form">
-		<div class="form__title">Запрос на обратный звонок</div>
-		<div class="form__desc">После отправки этого сообщения <br>мы перезвоним вам или <br>ответим на почту</div>
+		<div class="form__title">Заказ на дубовую щепу: </div>
 		<div class="form__elements">
 			<div class="form__input input input_name"><img src="upload/icons/persona.png" alt=""><input type="text" placeholder="Ваше имя*"></div>
 			<div class="form__input input input_phone"><img src="upload/icons/phone.png" alt=""><input type="text" placeholder="Ваш телефон*"></div>
@@ -58,6 +57,11 @@
 			</ul>
 		</div>
 		<div class="panel__phone phone col_line"><img src="upload/icons/phone-round.png" alt=""><a href="">+ 3 8099 562 10 93</a></div>
+		<div class="panel__hum hidden">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 	</div>
 </div>
 
@@ -94,25 +98,25 @@
 					<div class="catalog__subtitle">Дубовая щепа легкой обжарки</div>
 					<div class="catalog__image"><img src="upload/catalog/1.png" alt=""></div>
 					<div class="catalog__price">72 грн/100 грамм</div>
-					<a href="" class="catalog__button button">Купить</a>
+					<a data-fancybox data-src="#popup-order" href="javascript:;" class="catalog__button button">Купить</a>
 				</div>
 				<div class="catalog__item col_line">
 					<div class="catalog__subtitle">Дубовая щепа средней обжарки</div>
 					<div class="catalog__image"><img src="upload/catalog/2.png" alt=""></div>
 					<div class="catalog__price">79 грн/100 грамм</div>
-					<a href="" class="catalog__button button">Купить</a>
+					<a data-fancybox data-src="#popup-order" href="javascript:;" class="catalog__button button">Купить</a>
 				</div>
 				<div class="catalog__item col_line">
 					<div class="catalog__subtitle">Дубовая щепа сильной обжарки</div>
 					<div class="catalog__image"><img src="upload/catalog/3.png" alt=""></div>
 					<div class="catalog__price">83 грн/100 грамм</div>
-					<a href="" class="catalog__button button">Купить</a>
+					<a data-fancybox data-src="#popup-order" href="javascript:;" class="catalog__button button">Купить</a>
 				</div>
 			</div>
 			<div class="catalog__desc title">инструкция к применению</div>
 			<div class="catalog__link link">
 				<div class="link__text">Инструкция по использованию щепы в PDF файле</div>
-				<a href="" class="link__button button">скачать</a>
+				<a href="" target="_blank" class="link__button button" download="">скачать</a>
 			</div>
 		</div>
 	</div>
