@@ -1,7 +1,20 @@
 /* Including styles files */
 /* Including fonts */
 @font-face {
-  src: url("../../fonts/"); }
+  src: url("../../fonts/BebasNeueBold.ttf");
+  font-family: 'Bebas'; }
+
+@font-face {
+  src: url("../../fonts/MyriadProCond.ttf");
+  font-family: 'MyriadProCond'; }
+
+@font-face {
+  src: url("../../fonts/AGOpus.ttf");
+  font-family: 'AGOpus'; }
+
+@font-face {
+  src: url("../../fonts/ArialMT.ttf");
+  font-family: 'ArialMT'; }
 
 /* Global settings */
 * {
@@ -12,8 +25,8 @@
           box-sizing: border-box; }
 
 body {
-  font-size: 16px;
-  font-family: "Tahoma", sans-serif;
+  font-size: 25px;
+  font-family: "Bebas", sans-serif;
   color: #000;
   background: white; }
 
@@ -34,7 +47,7 @@ ul {
   font-size: 0; }
   ul li {
     display: inline-block;
-    font-size: 16px;
+    font-size: 25px;
     list-style-type: none; }
 
 a {
@@ -44,17 +57,20 @@ a {
   -webkit-transition: .3s;
   transition: .3s; }
 
+img {
+  display: block; }
+
 .icon {
   display: inline-block;
   vertical-align: middle; }
 
-.input, .button, .slick-slide {
+.input, .button, .slick-slide, .textarea {
   outline: none; }
 
 /* Grid */
 .container {
   position: relative;
-  width: 1170px;
+  width: 1030px;
   padding-left: 15px;
   padding-right: 15px; }
 
@@ -67,7 +83,7 @@ a {
 .row:after, .clearfix:after {
   clear: both; }
 
-.row_inline {
+.row_line {
   text-align: center;
   font-size: 0; }
 
@@ -78,7 +94,7 @@ a {
   .col_line {
     display: inline-block;
     vertical-align: top;
-    font-size: 16px;
+    font-size: 25px;
     min-height: 1px; }
   .col-1 {
     width: 100%; }
@@ -94,8 +110,8 @@ a {
 /* Form elements */
 .input {
   display: block;
-  font-size: 16px;
-  font-family: "Tahoma", sans-serif;
+  font-size: 25px;
+  font-family: "Bebas", sans-serif;
   background: white;
   width: 100%; }
   .input::-webkit-input-placeholder {
@@ -108,8 +124,8 @@ a {
     color: #878686; }
 
 .textarea {
-  font-size: 16px;
-  font-family: "Tahoma", sans-serif;
+  font-size: 25px;
+  font-family: "Bebas", sans-serif;
   display: block;
   background: white;
   resize: none;
@@ -126,8 +142,8 @@ a {
 .button {
   position: relative;
   display: block;
-  font-size: 16px;
-  font-family: "Tahoma", sans-serif;
+  font-size: 25px;
+  font-family: "Bebas", sans-serif;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;

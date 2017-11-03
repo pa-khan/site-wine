@@ -10,9 +10,7 @@ var gulp       = require('gulp'),
 	pngquant     = require('imagemin-pngquant'), 
 	cache        = require('gulp-cache'), 
 	autoprefixer = require('gulp-autoprefixer'),
-	spritesmith = require('gulp.spritesmith'),
-	rsync = require('gulp-rsync'),
-	zip = require('gulp-zip');
+	spritesmith = require('gulp.spritesmith');
 
 
 gulp.task('sprite', function () {
